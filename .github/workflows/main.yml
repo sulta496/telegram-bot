@@ -16,6 +16,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Aiogram
+        run: |
+          pip install aiogram
+
       - name: Start Telegram Bot
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
